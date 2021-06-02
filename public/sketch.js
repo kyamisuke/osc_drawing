@@ -13,7 +13,7 @@ function setup() {
 function newDrawing(data) {
     noStroke();
     fill(255, 0, 100);
-    ellipse(data.x,data.y,30,30);
+    ellipse(data.x, data.y, 30, 30);
 }
 
 function newDeviceDrawing(data) {
@@ -32,7 +32,7 @@ function mouseDragged() {
 
     noStroke();
     fill(255);
-    ellipse(mouseX,mouseY,30,30);
+    ellipse(mouseX, mouseY, 30, 30);
 }
 
 function controllerOperated(pads) {
@@ -47,7 +47,7 @@ function newOperated(data) {
 
 function draw() {
     var pads = navigator.getGamepads ? navigator.getGamepads() :
-    (navigator.webkitGetGamepads ? navigator.webkitGetGamepads : []);
+        (navigator.webkitGetGamepads ? navigator.webkitGetGamepads : []);
 
     pads = pads[0];
     if (pads) {
